@@ -2,13 +2,13 @@
 
 <html>
     <body>
-        <form action="add">
+        <form action="adddata">
             
-            <label>Enter a number 1</label>
-            <input type="text" id="num1" name="num1">
+            <label>Enter your Name 1</label>
+            <input type="text" id="name" name="name">
             <br>
-            <label>Enter a number 2</label>
-            <input type="text" id="num2" name="num2">
+            <label>Enter your age</label>
+            <input type="text" id="age" name="age">
             <br>
             <input type="submit" value="submit
             ">

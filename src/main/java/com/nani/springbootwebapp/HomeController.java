@@ -10,6 +10,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
+import org.springframework.web.bind.annotation.RequestMethod;
+
 
 @Controller
 public class HomeController {
@@ -23,6 +25,7 @@ public class HomeController {
     @RequestMapping("add")
     public  ModelAndView add(@RequestParam("num1")int n1,@RequestParam("num2")int n2,ModelAndView model){
         
+        
         // int n1=Integer.parseInt(req.getParameter("n1"));
         // int n2=Integer.parseInt(req.getParameter("n2"));
 
@@ -34,5 +37,13 @@ public class HomeController {
 
         return model;
     }
+
+    @RequestMapping("adddata")
+    public String adddata(Data data) {
+
+        return "result";
+
+    }
+    
 
 }

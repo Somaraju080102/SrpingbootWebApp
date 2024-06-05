@@ -2,6 +2,8 @@
 
 <html>
     <body>
-       <center> <h1>Result is : ${val} </h1></center>
+
+        <center><h1>Welcome to you data</h1></center>
+       <center> <h2> ${data} </h2></center>
     </body>
 </html>
