@@ -4,6 +4,7 @@ package com.nani.springbootwebapp;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -18,10 +19,10 @@ public class HomeController {
 	}
 
     @RequestMapping("add")
-    public String result(HttpServletRequest req,HttpSession res){
+    public String result(@RequestParam("num1")int n1,@RequestParam("num2")int n2,HttpSession res){
         
-        int n1=Integer.parseInt(req.getParameter("num1"));
-        int n2=Integer.parseInt(req.getParameter("num2"));
+        // int n1=Integer.parseInt(req.getParameter("n1"));
+        // int n2=Integer.parseInt(req.getParameter("n2"));
 
         System.out.println(n1+n2);
         int  val=n1+n2;
